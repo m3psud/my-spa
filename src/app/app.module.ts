@@ -5,12 +5,16 @@ import {HttpClientModule} from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { PageListComponent } from './page-list/page-list.component';
+import { SearchDirective } from './directives/search.directive';
+import { ClassDirective } from './directives/class.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchBarComponent,
-    PageListComponent
+    PageListComponent,
+    ClassDirective,
+    SearchDirective
   ],
   imports: [
     BrowserModule,

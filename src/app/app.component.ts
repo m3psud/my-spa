@@ -10,7 +10,7 @@ import { WikipediaService } from './wikipedia.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- 
+  currentPage=0
   pages= [] ;
   term=[];
 
@@ -26,4 +26,9 @@ export class AppComponent {
    });
   
   }
+  checkWindowIndex(index:number){
+    return Math.abs(this.currentPage - index) < 5;
+  }
+ 
+  
 }
