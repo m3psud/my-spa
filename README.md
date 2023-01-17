@@ -18,7 +18,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-Framework, linguagem e ferramentas
+## Deploy
+
+
+## Framework, linguagem e ferramentas
 
     Angular
     husky
@@ -26,18 +29,18 @@ Framework, linguagem e ferramentas
     bootstrap
     bulma
 
-Tecnologias X e Y
+## Tecnologias X e Y
 
 Estou apreendo Angular então quis testar este framework.
 
-Desafios e problemas
+## Desafios e problemas
 
 Debido a que meus conhecimentos en Angular são  básicos tive um pouco de dificuldade pra saber como implementar algumas funcionalidades.
 
 
 *testes
 
-Melhorias e próximas implementações
+## Melhorias e próximas implementações
 
 fazera SPA  um pouco mais robusta com mais modulos e rotas.  
 

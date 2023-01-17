@@ -1,15 +1,16 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed} from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
+import {HttpClientModule} from '@angular/common/http';
+
 
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [
-        AppComponent,
-        HttpClientTestingModule 
-      ],
+        AppComponent
+    ],
+      imports:[ HttpClientModule],
     }).compileComponents();
   });
 
@@ -29,6 +30,10 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('wsearch app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('wikiSearch');
   });
 });
+
+
+
+  

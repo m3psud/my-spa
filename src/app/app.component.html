@@ -1,8 +1,17 @@
 
 <div class="container" >
+  <figure class="text-center">
+    <blockquote class="blockquote">
+      <p>A busca pelo conhecimento é o principio da Sabiduria.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+     <cite title="Source Title">wikiSearch</cite>
+    </figcaption>
+  </figure>
   <app-search-bar (submitted)="onTerm($event)" ></app-search-bar>
   <br>
- 
+
+  
  <app-page-list *ngIf="pages.length" [pages]="pages"  [term]="term"   [totalPages]="totalPages" ></app-page-list>
 
 
