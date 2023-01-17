@@ -10,25 +10,29 @@ import { WikipediaService } from './wikipedia.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  currentPage=0
-  pages= [] ;
+currentPage:number =1;
+currentPages:number =1;
+  pages:any =[] ;
+  totalPages:any=[];
   term=[];
 
   constructor( private wikipedia: WikipediaService) {}
   
-  onTerm(term: string) {
+  onTerm(term:string) {
   
-   this.wikipedia.search(term).subscribe((response:any ) =>{
-     this.pages = response.query.search;
-     this.term = response.query.search;
-     console.log(this.pages)
-     console.log(this.term)
-   });
+   
+    this.wikipedia.search(term).subscribe((response:any ) =>{
+      this.pages = response.query.search;
+      this.term = response.query.search;
+      this.totalPages=response.query.search.length;
+      console.log(this.pages)
+      console.log(this.term)
+    });
   
   }
-  checkWindowIndex(index:number){
-    return Math.abs(this.currentPage - index) < 5;
-  }
- 
+
+
+
+
   
 }

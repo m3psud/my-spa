@@ -7,8 +7,10 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class PageListComponent implements OnInit {
   @Input() pages= [];
- @Input() term =[]
-  
+ @Input() term =[];
+ @Input() currentPage =0;
+ @Input()  totalPages:any=[];
+
   constructor(){}
 
   ngOnInit(){
