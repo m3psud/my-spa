@@ -18,12 +18,28 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+Framework, linguagem e ferramentas
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    Angular
+    husky
+    commitzen
+    bootstrap
+    bulma
 
-## Further help
+Tecnologias X e Y
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Estou apreendo Angular então quis testar este framework.
+
+Desafios e problemas
+
+Debido a que meus conhecimentos en Angular são  básicos tive um pouco de dificuldade pra saber como implementar algumas funcionalidades.
+
+
+*testes
+
+Melhorias e próximas implementações
+
+fazera SPA  um pouco mais robusta com mais modulos e rotas.  
+
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
